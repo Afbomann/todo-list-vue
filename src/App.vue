@@ -42,7 +42,7 @@ onMounted(() => loadTasks());
 
     <form v-on:submit.prevent="addTask()" class="mt-[2dvh] flex gap-[2dvh]">
       <input
-        class="flex-1 bg-slate-200 px-[10px] py-[5px] rounded-lg outline-none"
+        class="flex-1 bg-slate-200 px-[10px] py-[5px] rounded-lg outline-none text-sm lg:text-base"
         placeholder="Enter your task.."
         v-model="input"
         type="text"
@@ -50,7 +50,7 @@ onMounted(() => loadTasks());
       <input
         type="submit"
         value="Add task"
-        class="bg-green-400 px-[15px] py-[5px] rounded-lg cursor-pointer"
+        class="bg-green-400 px-[15px] py-[5px] rounded-lg cursor-pointer text-sm lg:text-base"
       />
     </form>
 
